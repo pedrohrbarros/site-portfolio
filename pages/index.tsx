@@ -1,118 +1,296 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Head from 'next/head'
+import Navbar from '.././components/Navbar/index'
+import { motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect';
+import Button from '../components/Button/index'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
+import { pedro_barros } from '../entities/Person'
+import Planet from '.././components/Planet/index'
+import Footer from '.././components/Footer/index'
 
 export default function Home() {
+
+  const { t } = useTranslation('index')
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+    <div
+    className="
+    w-full
+    h-full
+    "
     >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      <Head>
+        <title>{pedro_barros.name}</title>
+        <meta name ="description" content="Pedro Barros Site Portfolio"/>
+        <link rel = "icon" href="/favicon.ico"/>
+      </Head>
+      <main
+      className="
+      w-full
+      h-screen
+      pb-6
+      max-[1060px]:h-full
+      "
+      >
+        <Navbar/>
+        <div
+        className="
+        w-full
+        h-3/4
+        px-5
+        flex
+        flex-row
+        flex-wrap
+        justify-around
+        items-center
+        max-[1060px]:py-10
+        "
+        >
+          <article
+          className="
+          w-4/6
+          h-auto
+          flex
+          flex-col
+          justify-center
+          items-start
+          gap-3
+          max-[1060px]:w-full
+          max-[1060px]:items-center
+          max-[1060px]:text-center
+          "
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+            <motion.h1
+            className="
+            font-h1
+            text-6xl
+            text-white
+            uppercase
+            font-bold
+            max-[350px]:text-5xl
+            "
+            animate={{
+              y: [80, 0],
+              opacity: [0, 1],
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.5,
+              ease:[0, 0, 0.8, 1.5],
+            }}
+            >
+              {pedro_barros.name}
+            </motion.h1>
+            <div
+            className="
+            w-auto
+            h-auto
+            flex
+            flex-row
+            flex-wrap
+            justify-start
+            items-center
+            gap-2
+            max-[1060px]:justify-center
+            max-[1060px]:text-center
+            " 
+            >
+              <motion.h2
+              animate={{
+                y: [90, 0],
+                opacity: [0, 1]
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.8,
+                ease:[0, 0, 0.8, 1.5],
+              }}
+              className="
+              font-h2
+              text-white
+              text-4xl
+              uppercase
+              font-bold
+              max-[350px]:text-[1.75rem]
+              "
+              >
+                {t('Developer')}
+              </motion.h2>
+              <motion.h2
+              animate={{
+                y: [90, 0],
+                opacity: [0, 1]
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.8,
+                ease:[0, 0, 0.8, 1.5],
+              }}
+              className="
+              font-h2
+              text-4xl
+              uppercase
+              text-fuchsia-700
+              font-bold
+              whitespace-nowrap
+              max-[350px]:text-[1.75rem]
+              "
+              >
+                <Typewriter
+                options={{
+                  delay: 550
+                }}
+                onInit={(typewriter) => {
+                  typewriter.changeDelay(100)
+                  typewriter.typeString('Front-End')
+                  .pauseFor(1000)
+                  .deleteAll()
+                  typewriter.changeDelay(100)
+                  typewriter.typeString('Back-End')
+                  .pauseFor(1000)
+                  .deleteAll()
+                  typewriter.changeDelay(100)
+                  typewriter.typeString(pedro_barros.dev_level)
+                  .start()
+                }}
+                />
+              </motion.h2>
+            </div>
+            <motion.p
+            animate={{
+              y:[90, 0],
+              opacity:[0, 1],
+            }}
+            transition={{
+              duration: 1,
+              delay: 1,
+              ease:[0, 0, 0.8, 1.5],
+            }}
+            className="
+            font-p
+            text-3xl
+            text-white
+            max-[350px]:text-xl
+            "
+            >
+              {t('Currently working with Next.js and Django to build complete websites.')}
+            </motion.p>
+            <motion.div
+            animate={{
+              y: [90, 0],
+              opacity: [0, 1],
+            }}
+            transition={{
+              duration: 1,
+              delay: 1.3,
+              ease:[0, 0, 0.8, 1.5],
+            }}
+            className="
+            flex
+            flex-row
+            flex-nowrap
+            w-auto
+            h-auto
+            gap-2
+            justify-start
+            items-center
+            "
+            >
+              <Button
+                text={t('Contact me')}
+                alternate_text='Whatsapp'
+                onClick={() => window.open('https://wa.me/' + pedro_barros.whatsapp, "_blank")}
+              />
+              <Button
+                text='Portfolio'
+                alternate_text={t('Works')}
+                onClick={() => {
+                  window.location.pathname = '/contact/'
+                }}
+              />
+            </motion.div>
+            <div
+            className="
+            w-auto
+            h-auto
+            flex
+            flex-row
+            flex-nowrap
+            justify-start
+            items-center
+            gap-2
+            "
+            >
+              <motion.a
+                animate={{
+                  y: [90, 0],
+                  opacity: [0, 1],
+                }} 
+                transition={{
+                  delay: 1.6,
+                  duration: 1,
+                  ease:[0, 0, 0.8, 1.5],
+                }}
+                href={pedro_barros.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillLinkedin 
+                  size={40}
+                  color="#FFFFFF"
+                />
+              </motion.a>
+              <motion.a
+                animate={{
+                  y: [90, 0],
+                  opacity: [0, 1],
+                }} 
+                transition={{
+                  delay: 1.6,
+                  duration: 1,
+                  ease:[0, 0, 0.8, 1.5],
+                }} 
+                href={pedro_barros.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub 
+                  size={40}
+                  color="#FFFFFF"
+                />
+              </motion.a>
+            </div>
+          </article>
+          <div
+            className="
+            w-auto
+            h-auto
+            max-[1060px]:p-5
+            "
+          >
+            <Planet
+            planet="bg-earth"
+            shadow="shadow-earth"
             />
-          </a>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <Footer/>
+      </main>
+    </div>
   )
+}
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'index'
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
 }
