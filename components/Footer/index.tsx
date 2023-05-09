@@ -11,11 +11,17 @@ function Footer() {
         planet="bg-earth"
         />
         <Navigation 
-        url="/portfolio"
+        url="/portfolio/"
         planet="bg-jupiter"
+        />
+        <Navigation 
+        url="/experiences/"
+        planet="bg-mars"
         />
     </footer>
   )
 }
+
+
 
 export default Footer

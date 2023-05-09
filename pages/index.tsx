@@ -1,14 +1,13 @@
 
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Head from 'next/head'
 import Navbar from '.././components/Navbar/index'
 import { motion } from 'framer-motion'
 import Typewriter from 'typewriter-effect';
 import Button from '../components/Button/index'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
-import { pedro_barros } from '../entities/Person'
+import { pedro_barros } from '../hooks/usePersons'
 import Planet from '.././components/Planet/index'
 import Footer from '.././components/Footer/index'
 
@@ -23,11 +22,6 @@ export default function Home() {
     h-full
     "
     >
-      <Head>
-        <title>{pedro_barros.name}</title>
-        <meta name ="description" content="Pedro Barros Site Portfolio"/>
-        <link rel = "icon" href="/favicon.ico"/>
-      </Head>
       <main
       className="
       w-full
@@ -36,7 +30,7 @@ export default function Home() {
       max-[1060px]:h-full
       "
       >
-        <Navbar/>
+        <Navbar page="index"/>
         <div
         className="
         w-full
@@ -58,7 +52,7 @@ export default function Home() {
           flex-col
           justify-center
           items-start
-          gap-3
+          gap-[2.5vw]
           max-[1060px]:w-full
           max-[1060px]:items-center
           max-[1060px]:text-center

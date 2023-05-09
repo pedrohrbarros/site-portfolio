@@ -2,13 +2,17 @@ import React from 'react'
 import Button from '.././Button/index'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { pedro_barros } from '../../entities/Person'
+import { pedro_barros } from '../../hooks/usePersons'
 
-function Navbar() {
+type Props = {
+  page: string
+}
+
+function Navbar(props: Props) {
 
   const { locale, push } = useRouter()
 
-  const { t } = useTranslation('index')
+  const { t } = useTranslation(props.page)
 
   const handleChangeLanguage = (l: string) => {
     push('/', undefined, {locale: l})
