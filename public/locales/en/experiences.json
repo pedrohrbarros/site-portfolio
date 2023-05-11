@@ -1,5 +1,17 @@
 {
     "Work with me":"Work with me",
     "Change language":"Change language",
-    "Set up budget":"Set up budget"
+    "Set up budget":"Set up budget",
+    "My last experiences":"My last experiences",
+    "IT Internship":"IT Internship",
+    "Atlantic Forest Biosphere Reserve":"Atlantic Forest Biosphere Reserve",
+    "IT assistant focused on cloud services such as Google Drive, Cloud, Azure, Oracle and AWS, setting up servers and file architectures for backup, managing networks and analyzing the best decisions for better digital security within the company.":"IT assistant focused on cloud services such as Google Drive, Cloud, Azure, Oracle and AWS, setting up servers and file architectures for backup, managing networks and analyzing the best decisions for better digital security within the company.",
+    "Financial Analyst":"Financial Analyst",
+    "I analyzed financial cases between the client and the company, performing accounting services and analyzing timelines of events to determine the final verdict of a case, usually the analyzes were done using the back office tool with data from MySQL banks.":"I analyzed financial cases between the client and the company, performing accounting services and analyzing timelines of events to determine the final verdict of a case, usually the analyzes were done using the back office tool with data from MySQL banks.",
+    "Data Analyst":"Data Analyst",
+    "Analyzed data from raw databases in MySQL and SQLite from an investment platform, assembling graphs and indicators, automating processes and tasks with Pandas (Python) and integrating these automations in dashboards and administrative systems made in Django.":"Analyzed data from raw databases in MySQL and SQLite from an investment platform, assembling graphs and indicators, automating processes and tasks with Pandas (Python) and integrating these automations in dashboards and administrative systems made in Django.",
+    "System Analyst":"System Analyst",
+    "Provided support to systems maintained in Django(Python) and React.js, analyzed data using PostgreSQL and some automations in Python, also provided maintenance support on Workpress sites and maintenance on sites hosted on AWS.":"Provided support to systems maintained in Django(Python) and React.js, analyzed data using PostgreSQL and some automations in Python, also provided maintenance support on Workpress sites and maintenance on sites hosted on AWS.",
+    "Fullstack Jr. Developer":"Fullstack Jr. Developer",
+    "I developed fully functional fullstack websites with back end in .NET, Django(Python) and NodeJS, using front end tools like React.js, Next.js, with TailwindCSS, usually developing in Typescript and/or Javascript. For Database, I used PostgreSQL.":"I developed fully functional fullstack websites with back end in .NET, Django(Python) and NodeJS, using front end tools like React.js, Next.js, with TailwindCSS, usually developing in Typescript and/or Javascript. For Database, I used PostgreSQL."
 }

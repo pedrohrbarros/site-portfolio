@@ -8,14 +8,14 @@ export const theme = {
   extend: {
     backgroundImage: {
       'space': "url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=893&q=80')",
-      'earth':"url('https://www.solarsystemscope.com/textures/download/8k_earth_daymap.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
-      'jupiter':"url('https://www.solarsystemscope.com/textures/download/8k_jupiter.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
-      'venus':"url('https://www.solarsystemscope.com/textures/download/4k_venus_atmosphere.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
-      'mercury':"url('https://www.solarsystemscope.com/textures/download/8k_mercury.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
-      'mars':"url('https://www.solarsystemscope.com/textures/download/8k_mars.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'earth':"url('https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'jupiter':"url('https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'venus':"url('https://www.solarsystemscope.com/textures/download/2k_venus_atmosphere.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'mercury':"url('https://www.solarsystemscope.com/textures/download/2k_mercury.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'mars':"url('https://www.solarsystemscope.com/textures/download/2k_mars.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
       'neptune':"url('https://www.solarsystemscope.com/textures/download/2k_neptune.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
       'uranus':"url('https://www.solarsystemscope.com/textures/download/2k_uranus.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
-      'moon':"url('https://www.solarsystemscope.com/textures/download/8k_moon.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')"
+      'moon':"url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')"
     },
     fontFamily: {
       'h1': "'Quicksand', sans-serif",

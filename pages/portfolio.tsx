@@ -164,14 +164,14 @@ function Portfolio() {
                 {
                   pedro_barros.portfolio.map((project, index) => (
                     chosenProject.name === project.name ? 
-                    <div className="w-auto h-auto">
-                      <label className="font-p text-2xl text-white cursor-pointer border-white border-b-2 border-solid transition-all" htmlFor={project.name} onClick={() => console.log(index)}>{project.name}</label>
-                      <input type="radio" name="portfolio" className="hidden" id={project.name} onClick={() => handleProjectClick(project, index)}/>
+                    <div key={index} className="w-auto h-auto">
+                      <label key={index} className="font-p text-2xl text-white cursor-pointer border-white border-b-2 border-solid transition-all" htmlFor={project.name} onClick={() => console.log(index)}>{project.name}</label>
+                      <input key={index} type="radio" name="portfolio" className="hidden" id={project.name} onClick={() => handleProjectClick(project, index)}/>
                     </div>
                     :
-                    <div className="w-auto h-auto">
-                      <label className="font-p text-2xl text-white cursor-pointer border-white border-b-0 border-solid transition-all duration-100" htmlFor={project.name}>{project.name}</label>
-                      <input type="radio" name="portfolio" className="hidden" id={project.name} onClick={() => handleProjectClick(project, index)}/>
+                    <div key={index} className="w-auto h-auto">
+                      <label key={index} className="font-p text-2xl text-white cursor-pointer border-white border-b-0 border-solid transition-all duration-100" htmlFor={project.name}>{project.name}</label>
+                      <input key={index} type="radio" name="portfolio" className="hidden" id={project.name} onClick={() => handleProjectClick(project, index)}/>
                     </div>
                   ))
                 }

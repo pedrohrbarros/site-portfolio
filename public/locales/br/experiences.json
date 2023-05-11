@@ -1,5 +1,13 @@
 {
     "Work with me":"Trabalhe comigo",
     "Change language":"Mudar idioma",
-    "Set up budget":"Fazer orçamento"
+    "Set up budget":"Fazer orçamento",
+    "My last experiences":"Minhas últimas experiências",
+    "IT Internship":"Estágio de TI",
+    "Atlantic Forest Biosphere Reserve":"Reserva da Biosfera da Mata Atlântica",
+    "IT assistant focused on cloud services such as Google Drive, Cloud, Azure, Oracle and AWS, setting up servers and file architectures for backup, managing networks and analyzing the best decisions for better digital security within the company.":"Assistente de TI focado em serviços na nuvem como Google Drive, Cloud, Azure, Oracle e AWS, montando servidores e arquiteturas de arquivos para backup, administrava redes e as analisava as melhores decisões para uma melhor segurança digital dentro da empresa.",
+    "Financial Analyst":"Analista Financeiro",
+    "I analyzed financial cases between the client and the company, performing accounting services and analyzing timelines of events to determine the final verdict of a case, usually the analyzes were done using the back office tool with data from MySQL banks.":"Analisava casos financeiros entre cliente e a empresa, realizando serviços contábeis e analisando timelines de eventos para determinar o veredito final de um caso, geralmente as análises eram feitas utilizando a ferramenta de back office com dados vindos de bancos MySQL.",
+    "Data Analyst":"Analista de Dados",
+    "Analyzed data from raw databases in MySQL and SQLite from an investment platform, assembling graphs and indicators, automating processes and tasks with Pandas (Python) and integrating these automations in dashboards and administrative systems made in Django.":"Analisava dados de bases de dados brutas em MySQL e SQLite de uma plataforma de investimentos, montando gráficos e indicadores, automatizando processos e tarefas com Pandas(Python) e integrando estas automatizações em dashboards e sistemas administrativos feitos em Django."
 }
