@@ -18,15 +18,15 @@ function Experiences() {
                 <div className="h-auto w-[400px] flex flex-col justify-center items-start gap-7">
                     <h1 className="font-h1 text-white text-6xl font-bold">{t('My last experiences')}</h1>
                 </div>
-                <div className="h-auto w-96 flex flex-col justify-center items-start gap-7">
-                    <Experience/>
-                </div>
-                <div className="h-auto w-96 flex flex-col justify-center items-start gap-7">
-                    <Experience/>
-                </div>
-                <div className="h-auto w-96 flex flex-col justify-center items-start gap-7">
-                    <Experience/>
-                </div>
+                {
+                    pedro_barros.work.map((work: Work) => (
+                        <div className="h-auto w-96 flex flex-col justify-center items-start gap-7">
+                            <Experience
+                             roles={work.roles}
+                            />
+                        </div>
+                    ))
+                }
             </main>
             <Footer/>
         </div>

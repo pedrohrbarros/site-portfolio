@@ -1,4 +1,4 @@
-type Role = {
+export type Role = {
     name: string
     timeInMonths: number
     description: string

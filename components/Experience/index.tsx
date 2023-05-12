@@ -1,16 +1,12 @@
 import React from 'react'
-import { Work } from '../../entities/Work'
-import { pedro_barros } from '../../hooks/usePersons'
+import { Role } from '../../entities/Work'
 
-type Props = {
-    works: Work[]
-}
+function Experience(roles: any & Role[]) {
 
-function Experience(props: Props) {
   return (
     <>
-      {props.works.map((work: Work) => (
-        <div>{work.role}</div>
+      {roles.map((role: Role) => (
+        <h1 className="font-h1 text-white text-3xl">{role.name}</h1>
       ))}
     </>
   )
