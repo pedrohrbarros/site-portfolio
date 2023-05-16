@@ -15,7 +15,11 @@ export const theme = {
       'mars':"url('https://www.solarsystemscope.com/textures/download/2k_mars.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
       'neptune':"url('https://www.solarsystemscope.com/textures/download/2k_neptune.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
       'uranus':"url('https://www.solarsystemscope.com/textures/download/2k_uranus.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
-      'moon':"url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')"
+      'moon':"url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'sun':"url('https://www.solarsystemscope.com/textures/download/2k_sun.jpg'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'nature': "url('https://images.unsplash.com/photo-1500829243541-74b677fecc30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'financial':"url('https://images.unsplash.com/photo-1634542984003-e0fb8e200e91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')",
+      'it':"url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'), url('https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47p55fd2e2iraf5dydwxpgvow00afb5c1zcnywtcyv&ep=v1_gifs_search&rid=giphy.gif&ct=g')"
     },
     fontFamily: {
       'h1': "'Quicksand', sans-serif",
@@ -68,11 +72,13 @@ export const theme = {
         '10px 10px 30px white inset',
         '0px 0px 30px #afe4ea'
       ],
+      'sun': '0px 0px 8vw #fda51f',
       'moon': [
         '-25px -25px 30px black inset',
         '10px 10px 30px white inset',
         '0px 0px 30px #a7a7a7'
-      ]
+      ],
+      'card': '0 0 0 1000px rgba(0, 0, 0, 0.6) inset'
     }
   },
 };

@@ -18,6 +18,10 @@ function Footer() {
         url="/experiences/"
         planet="bg-mars"
         />
+        <Navigation 
+        url="/contact/"
+        planet="bg-moon"
+        />
     </footer>
   )
 }
