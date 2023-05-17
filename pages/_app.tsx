@@ -29,13 +29,18 @@ function App({ Component, pageProps }: AppProps) {
         router.events.off('routeChangeError', handleComplete)
       }
     })
-    return loading && (
-      <div
-        className="w-full h-screen flex flex-col justify-center items-center bg-space"
-      >
-        <Loader/>
-      </div>
-    )
+    if (loading) {
+      return (
+        <div
+          className="w-full h-screen flex flex-col justify-center items-center bg-space"
+        >
+          <Loader/>
+        </div>
+      )
+    }
+    else {
+      return null
+    }
   }
 
   return (
