@@ -6,6 +6,5 @@ export type Role = {
 
 export type Work = {
     workplace: string
-    type: string
     roles: Role[]
 }

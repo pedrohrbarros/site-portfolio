@@ -3,6 +3,7 @@ import calculateMonthsSinceSpecificDate from '../tools/calculateMonthsSinceSpeci
 
 export const pedro_barros = new Person(
     'Pedro Barros',
+    'pedrobarros232@hotmail.com',
     'Full Stack!',
     'https://github.com/pedrohrbarros',
     '5511954312733',
@@ -85,7 +86,6 @@ export const pedro_barros = new Person(
         
         {
             workplace: 'Atlantic Forest Biosphere Reserve',
-            type: 'bg-nature',
             roles: [
                 {
                     name: 'IT Internship',
@@ -96,7 +96,6 @@ export const pedro_barros = new Person(
         },
         {
             workplace: 'TraderEvolution',
-            type: 'bg-financial',
             roles: [
                 {
                     name: 'Financial Analyst',
@@ -112,7 +111,6 @@ export const pedro_barros = new Person(
         },
         {
             workplace: 'Artius',
-            type: 'bg-it',
             roles: [ 
                 {
                     name: 'System Analyst',

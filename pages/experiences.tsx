@@ -10,6 +10,11 @@ import { pedro_barros } from '../hooks/usePersons'
 function Experiences() {
     
     const { t } = useTranslation('experiences')
+    const backgroundImages = [
+        "bg-nature",
+        "bg-financial",
+        "bg-it"
+    ]
 
     return (
         <div className="pb-4">
@@ -24,7 +29,7 @@ function Experiences() {
                             <Experience
                              workplace={work.workplace}
                              roles={work.roles}
-                             backgroundImage={work.type}
+                             backgroundImage={backgroundImages[index]}
                             />
                         </div>
                     ))
