@@ -16,16 +16,7 @@ export const pedro_barros = new Person(
             repository:'https://github.com/pedrohrbarros/fastdash',
             timeSpentInWeeks: 'In progress',
             frontendTool: 'Next.ts',
-            backendTool: 'Django'
-        },
-        {
-            name: 'Vegmarket',
-            description: 'Full stack e-commerce for vegan products',
-            url: 'https://vegmarket.vercel.app/',
-            repository: 'https://github.com/pedrohrbarros/vegmarket',
-            timeSpentInWeeks: 'In progress',
-            frontendTool: 'React.ts',
-            backendTool: 'Django'
+            backendTool: 'Node.js/Python'
         },
         {
             name: 'CrestaX',
