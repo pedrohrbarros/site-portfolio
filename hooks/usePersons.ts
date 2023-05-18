@@ -11,7 +11,7 @@ export const pedro_barros = new Person(
     [   
         {
             name: 'Fastdash',
-            description: 'Interative full stack dashboard',
+            description: 'Interative full stack dashboard with automatic reporting.',
             url: 'https://fast-dash.vercel.app/',
             repository:'https://github.com/pedrohrbarros/fastdash',
             timeSpentInWeeks: 'In progress',

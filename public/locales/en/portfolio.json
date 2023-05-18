@@ -4,7 +4,7 @@
     "Set up budget":"Set up budget",
     "No choosen project":"No choosen project",
     "Choose a project below":"Choose a project below",
-    "Interative full stack dashboard":"Interative full stack dashboard",
+    "Interative full stack dashboard with automatic reporting.":"Interative full stack dashboard with automatic reporting.",
     "Full stack e-commerce for vegan products":"Full stack e-commerce for vegan products",
     "Landing page for a lawyer enterprise":"Landing page for a lawyer enterprise",
     "Institutional educacional landing page":"Institutional educacional landing page",
@@ -18,5 +18,6 @@
     "Weeks":"Weeks",
     "Time Spent":"Time Spent",
     "Landing page for an events company":"Landing page for an events company",
-    "My website portfolio":"My website portfolio"
+    "My website portfolio":"My website portfolio",
+    "Choose a work below":"Choose a work below"
 }
