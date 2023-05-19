@@ -16,7 +16,7 @@ export const pedro_barros = new Person(
             repository:'https://github.com/pedrohrbarros/fastdash',
             timeSpentInWeeks: 'In progress',
             frontendTool: 'Next.ts',
-            backendTool: 'Node.js/Python'
+            backendTool: 'Node.js'
         },
         {
             name: 'CrestaX',
