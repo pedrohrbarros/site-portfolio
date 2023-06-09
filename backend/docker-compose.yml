@@ -1,0 +1,19 @@
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: site_portfolio_image
+    container_name: site_portfolio_container
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    volumes:
+      - site_portfolio_volume:/data/site_portfolio_container
+volumes:
+    site_portfolio_volume:
+      external: true
