@@ -6,19 +6,23 @@ from rest_framework.response import Response
 class PersonView(APIView):
   def get(self, request, format='json'):
     persons = [person for person in Person.objects.all()]
-    return Response(persons)
+    serializer = PersonSerializer(persons)
+    return Response(serializer.data)
 
 class ProjectView(APIView):
   def get(self, request, format='json'):
     projects = [project for project in Project.objects.all()]
-    return Response(project)
+    serializer = ProjectSerializer(projects)
+    return Response(serializer.data)
 
 class RoleView(APIView):
   def get(self, request, format='json'):
     roles = [role for role in Role.objects.all()]
-    return Response(roles)
+    serializer = RoleSerializer(roles)
+    return Response(serializer.data)
 
 class WorkView(APIView):
   def get(self, request, format='json'):
     works = [work for work in Work.objects.all()]
-    return Response(works)
+    serializer = WorkSerializer(works)
+    return Response(serializer.data)
