@@ -59,15 +59,7 @@ Install al the dependecies
 pip install -r requirements.txt --y
 ```
 
-Create the local database with the Dockerfile
-
-```
-docker volume create site_portfolio_volume
-```
-
-```
-docker-compose up -d
-```
+Create the local database with Docker or with Railways.
 
 Either, you can connect to an existent database by creating and fulfilling the .env file with the same model as the .example.env file
 
