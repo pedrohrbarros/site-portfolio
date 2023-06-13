@@ -63,6 +63,12 @@ Create the local database with Docker or with Railways.
 
 Either, you can connect to an existent database by creating and fulfilling the .env file with the same model as the .example.env file
 
+Collect static files
+
+```
+python manage.py collectstatic --noinput
+```
+
 Make all the migrations
 ```
 python manage.py makemigrations
