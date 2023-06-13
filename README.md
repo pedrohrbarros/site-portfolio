@@ -12,6 +12,9 @@ My personal site portfolio showing my works and experiences.
 
 ## Getting Started <a name = "getting_started"></a>
 
+
+### Frontend
+
 Clone the project with:
 
 ```
@@ -21,7 +24,7 @@ git clone https://github.com/pedrohrbarros/site-portfolio.git
 Move to directory
 
 ```
-cd site-portfolio
+cd site-portfolio/frontend
 ```
 
 Install al the dependecies
@@ -36,8 +39,56 @@ Run the project locally
 npm run dev
 ```
 
+### Backend
+
+Clone the project with:
+
+```
+git clone https://github.com/pedrohrbarros/site-portfolio.git
+```
+
+Move to directory
+
+```
+cd site-portfolio/backend
+```
+
+Install al the dependecies
+
+```
+pip install -r requirements.txt --y
+```
+
+Create the local database with the Dockerfile
+
+```
+docker volume create site_portfolio_volume
+```
+
+```
+docker-compose up -d
+```
+
+Either, you can connect to an existent database by creating and fulfilling the .env file with the same model as the .example.env file
+
+Make all the migrations
+```
+python manage.py makemigrations
+```
+
+```
+python manage.py migrate
+```
+
+Run the server locally
+```
+python manage.py runserver
+```
+
 ### Prerequisites
 
+- Python
+- Django
 - Node.js
 - Next.js
 - Typescript
