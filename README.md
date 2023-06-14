@@ -8,7 +8,7 @@
 
 ## About <a name = "about"></a>
 
-My personal site portfolio showing my works and experiences.
+Comprehensive personal website portfolio that showcases my professional projects and employment history. The portfolio is equipped with a robust PostgreSQL database and utilizes industry-tech tools such as Next.js with Typescript and Django with Python
 
 ## Getting Started <a name = "getting_started"></a>
 
