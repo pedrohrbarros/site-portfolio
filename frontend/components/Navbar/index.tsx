@@ -1,26 +1,28 @@
-import React from 'react'
-import Button from '.././Button/index'
-import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
-import { pedro_barros } from '../../hooks/usePersons'
+import React from "react";
+import Button from ".././Button/index";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { personStore } from "../../hooks/usePerson";
 
 type Props = {
-  page: string
-}
+  page: string;
+};
 
 function Navbar(props: Props) {
+  const { locale, push } = useRouter();
 
-  const { locale, push } = useRouter()
-
-  const { t } = useTranslation(props.page)
+  const { t } = useTranslation(props.page);
 
   const handleChangeLanguage = (l: string) => {
-    push('/', undefined, {locale: l})
-  }
+    push("/", undefined, { locale: l });
+  };
+
+  const name = personStore((state) => state.name)
+  const whatsapp = personStore((state) => state.whatsapp)
 
   return (
     <nav
-    className="
+      className="
     w-full
     h-auto
     bg-transparent
@@ -34,7 +36,7 @@ function Navbar(props: Props) {
     max-[715px]:py-6
     "
     >
-      <a 
+      <a
         href="/"
         target="_blank"
         rel="noopener noreferrer"
@@ -45,16 +47,18 @@ function Navbar(props: Props) {
         "
       >
         <h1
-        className="
+          className="
         font-h1
         text-6xl
         text-white
         max-[715px]:text-4xl
         "
-        >{pedro_barros.name}</h1>
+        >
+          {name}
+        </h1>
       </a>
       <div
-      className="
+        className="
       w-4/6
       flex
       flex-row
@@ -65,28 +69,28 @@ function Navbar(props: Props) {
       "
       >
         <Button
-          text={t('Work with me')}
-          alternate_text={t('Set up budget')}
-          onClick={() => window.open('https://wa.me/' + pedro_barros.whatsapp, "_blank")}
+          text={t("Work with me")}
+          alternate_text={t("Set up budget")}
+          onClick={() =>
+            window.open("https://wa.me/" + whatsapp, "_blank")
+          }
         />
-        {
-          locale === 'en' ?
+        {locale === "en" ? (
           <Button
-            text={t('Change language')}
-            alternate_text='Brasileiro'
-            onClick={() => handleChangeLanguage('br')}
+            text={t("Change language")}
+            alternate_text="Brasileiro"
+            onClick={() => handleChangeLanguage("br")}
           />
-          : locale === 'br' ? 
+        ) : locale === "br" ? (
           <Button
-            text={t('Change language')}
-            alternate_text='English'
-            onClick={() => handleChangeLanguage('en')}
+            text={t("Change language")}
+            alternate_text="English"
+            onClick={() => handleChangeLanguage("en")}
           />
-          : null
-        }
+        ) : null}
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

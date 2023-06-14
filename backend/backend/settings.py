@@ -99,7 +99,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://site-portfolio-api.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://site-portfolio-pedro-barros-api.up.railway.app/']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

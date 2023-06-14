@@ -1,38 +1,42 @@
-
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Navbar from '.././components/Navbar/index'
-import { motion } from 'framer-motion'
-import Typewriter from 'typewriter-effect';
-import Button from '../components/Button/index'
-import { AiFillLinkedin } from 'react-icons/ai'
-import { AiFillGithub } from 'react-icons/ai'
-import { pedro_barros } from '../hooks/usePersons'
-import Planet from '.././components/Planet/index'
-import Footer from '.././components/Footer/index'
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Navbar from ".././components/Navbar/index";
+import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
+import Button from "../components/Button/index";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { personStore } from "../hooks/usePerson";
+import Planet from ".././components/Planet/index";
+import Footer from ".././components/Footer/index";
 
 export default function Home() {
+  const { t } = useTranslation("index");
 
-  const { t } = useTranslation('index')
+  const name = personStore((state) => state.name)
+  const dev_role = personStore((state) => state.dev_role)
+  const whatsapp = personStore((state) => state.whatsapp)
+  const linkedin = personStore((state) => state.linkedin)
+  const github = personStore((state) => state.github)
 
   return (
     <div
-    className="
+      className="
     w-full
     h-full
     "
     >
       <main
-      className="
+        className="
       w-full
       h-screen
       pb-6
       max-[1060px]:h-full
       "
       >
-        <Navbar page="index"/>
+        <Navbar page="index" />
         <div
-        className="
+          className="
         w-full
         h-3/4
         px-5
@@ -45,7 +49,7 @@ export default function Home() {
         "
         >
           <article
-          className="
+            className="
           w-4/6
           h-auto
           flex
@@ -59,7 +63,7 @@ export default function Home() {
           "
           >
             <motion.h1
-            className="
+              className="
             font-h1
             text-6xl
             text-white
@@ -67,20 +71,20 @@ export default function Home() {
             font-bold
             max-[350px]:text-5xl
             "
-            animate={{
-              y: [80, 0],
-              opacity: [0, 1],
-            }}
-            transition={{
-              duration: 1,
-              delay: 0.5,
-              ease:[0, 0, 0.8, 1.5],
-            }}
+              animate={{
+                y: [80, 0],
+                opacity: [0, 1],
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.5,
+                ease: [0, 0, 0.8, 1.5],
+              }}
             >
-              {pedro_barros.name}
+              {name}
             </motion.h1>
             <div
-            className="
+              className="
             w-auto
             h-auto
             flex
@@ -91,19 +95,19 @@ export default function Home() {
             gap-2
             max-[1060px]:justify-center
             max-[1060px]:text-center
-            " 
+            "
             >
               <motion.h2
-              animate={{
-                y: [90, 0],
-                opacity: [0, 1]
-              }}
-              transition={{
-                duration: 1,
-                delay: 0.8,
-                ease:[0, 0, 0.8, 1.5],
-              }}
-              className="
+                animate={{
+                  y: [90, 0],
+                  opacity: [0, 1],
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0.8,
+                  ease: [0, 0, 0.8, 1.5],
+                }}
+                className="
               font-h2
               text-white
               text-4xl
@@ -112,19 +116,19 @@ export default function Home() {
               max-[350px]:text-[1.75rem]
               "
               >
-                {t('Developer')}
+                {t("Developer")}
               </motion.h2>
               <motion.h2
-              animate={{
-                y: [90, 0],
-                opacity: [0, 1]
-              }}
-              transition={{
-                duration: 1,
-                delay: 0.8,
-                ease:[0, 0, 0.8, 1.5],
-              }}
-              className="
+                animate={{
+                  y: [90, 0],
+                  opacity: [0, 1],
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0.8,
+                  ease: [0, 0, 0.8, 1.5],
+                }}
+                className="
               font-h2
               text-4xl
               uppercase
@@ -135,55 +139,58 @@ export default function Home() {
               "
               >
                 <Typewriter
-                options={{
-                  delay: 550
-                }}
-                onInit={(typewriter) => {
-                  typewriter.changeDelay(100)
-                  typewriter.typeString('Front-End')
-                  .pauseFor(1000)
-                  .deleteAll()
-                  typewriter.changeDelay(100)
-                  typewriter.typeString('Back-End')
-                  .pauseFor(1000)
-                  .deleteAll()
-                  typewriter.changeDelay(100)
-                  typewriter.typeString(pedro_barros.dev_level)
-                  .start()
-                }}
+                  options={{
+                    delay: 550,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter.changeDelay(100);
+                    typewriter
+                      .typeString("Front-End")
+                      .pauseFor(1000)
+                      .deleteAll();
+                    typewriter.changeDelay(100);
+                    typewriter
+                      .typeString("Back-End")
+                      .pauseFor(1000)
+                      .deleteAll();
+                    typewriter.changeDelay(100);
+                    typewriter.typeString(dev_role).start();
+                  }}
                 />
               </motion.h2>
             </div>
             <motion.p
-            animate={{
-              y:[90, 0],
-              opacity:[0, 1],
-            }}
-            transition={{
-              duration: 1,
-              delay: 1,
-              ease:[0, 0, 0.8, 1.5],
-            }}
-            className="
+              animate={{
+                y: [90, 0],
+                opacity: [0, 1],
+              }}
+              transition={{
+                duration: 1,
+                delay: 1,
+                ease: [0, 0, 0.8, 1.5],
+              }}
+              className="
             font-p
             text-3xl
             text-white
             max-[350px]:text-xl
             "
             >
-              {t('Currently working with Next.js and Django to build complete websites.')}
+              {t(
+                "Currently working with Next.js and Django to build complete websites."
+              )}
             </motion.p>
             <motion.div
-            animate={{
-              y: [90, 0],
-              opacity: [0, 1],
-            }}
-            transition={{
-              duration: 1,
-              delay: 1.3,
-              ease:[0, 0, 0.8, 1.5],
-            }}
-            className="
+              animate={{
+                y: [90, 0],
+                opacity: [0, 1],
+              }}
+              transition={{
+                duration: 1,
+                delay: 1.3,
+                ease: [0, 0, 0.8, 1.5],
+              }}
+              className="
             flex
             flex-row
             flex-nowrap
@@ -195,20 +202,22 @@ export default function Home() {
             "
             >
               <Button
-                text={t('Contact me')}
-                alternate_text='Whatsapp'
-                onClick={() => window.open('https://wa.me/' + pedro_barros.whatsapp, "_blank")}
+                text={t("Contact me")}
+                alternate_text="Whatsapp"
+                onClick={() =>
+                  window.open("https://wa.me/" + whatsapp, "_blank")
+                }
               />
               <Button
-                text='Portfolio'
-                alternate_text={t('Works')}
+                text="Portfolio"
+                alternate_text={t("Works")}
                 onClick={() => {
-                  window.location.pathname = '/contact/'
+                  window.location.pathname = "/contact/";
                 }}
               />
             </motion.div>
             <div
-            className="
+              className="
             w-auto
             h-auto
             flex
@@ -223,39 +232,33 @@ export default function Home() {
                 animate={{
                   y: [90, 0],
                   opacity: [0, 1],
-                }} 
+                }}
                 transition={{
                   delay: 1.6,
                   duration: 1,
-                  ease:[0, 0, 0.8, 1.5],
+                  ease: [0, 0, 0.8, 1.5],
                 }}
-                href={pedro_barros.linkedin}
+                href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillLinkedin 
-                  size={40}
-                  color="#FFFFFF"
-                />
+                <AiFillLinkedin size={40} color="#FFFFFF" />
               </motion.a>
               <motion.a
                 animate={{
                   y: [90, 0],
                   opacity: [0, 1],
-                }} 
+                }}
                 transition={{
                   delay: 1.6,
                   duration: 1,
-                  ease:[0, 0, 0.8, 1.5],
-                }} 
-                href={pedro_barros.github}
+                  ease: [0, 0, 0.8, 1.5],
+                }}
+                href={github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillGithub 
-                  size={40}
-                  color="#FFFFFF"
-                />
+                <AiFillGithub size={40} color="#FFFFFF" />
               </motion.a>
             </div>
           </article>
@@ -266,25 +269,20 @@ export default function Home() {
             max-[1060px]:p-5
             "
           >
-            <Planet
-            planet="bg-earth"
-            shadow="shadow-earth"
-            />
+            <Planet planet="bg-earth" shadow="shadow-earth" />
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </main>
     </div>
-  )
+  );
 }
 
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'index'
-      ])),
+      ...(await serverSideTranslations(locale, ["index"])),
       // Will be passed to the page component as props
     },
-  }
+  };
 }

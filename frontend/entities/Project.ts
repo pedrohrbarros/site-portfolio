@@ -3,7 +3,7 @@ export type Project = {
     description: string
     url: string
     repository: string
-    timeSpentInWeeks: number | string
     frontendTool: string
     backendTool: string
+    database: string
 }
