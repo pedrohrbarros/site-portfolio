@@ -4,20 +4,10 @@
     "Set up budget":"Set up budget",
     "No choosen project":"No choosen project",
     "Choose a project below":"Choose a project below",
-    "Interative full stack dashboard with automatic reporting.":"Interative full stack dashboard with automatic reporting.",
-    "Full stack e-commerce for vegan products":"Full stack e-commerce for vegan products",
-    "Landing page for a lawyer enterprise":"Landing page for a lawyer enterprise",
-    "Institutional educacional landing page":"Institutional educacional landing page",
-    "Landing Page for restaurant":"Landing Page for restaurant",
-    "Backend authentication structure":"Backend authentication structure",
-    "In progress":"In progress",
     "See project":"See project",
     "Go to website":"Go to website",
     "See repository":"See repository",
     "Go to GitHub":"Go to GitHub",
-    "Weeks":"Weeks",
-    "Time Spent":"Time Spent",
-    "Landing page for an events company":"Landing page for an events company",
-    "My website portfolio":"My website portfolio",
-    "Choose a work below":"Choose a work below"
+    "Personal website portfolio that showcases my projects and employment history. The portfolio is equipped with a robust PostgreSQL database and utilizes industry-tech tools such as Next.js with Typescript and Django with Python":"Personal website portfolio that showcases my projects and employment history. The portfolio is equipped with a robust PostgreSQL database and utilizes industry-tech tools such as Next.js with Typescript and Django with Python",
+    "Responsive full-stack dashboard with advanced capabilities. This solution incorporates cutting-edge technologies such as Next.js with Typescript, Node.js with Express and Typescript, and leverages the power of a reliable PostgreSQL database. The dashboard seamlessly integrates front-end and back-end.":"Responsive full-stack dashboard with advanced capabilities. This solution incorporates cutting-edge technologies such as Next.js with Typescript, Node.js with Express and Typescript, and leverages the power of a reliable PostgreSQL database. The dashboard seamlessly integrates front-end and back-end."
 }

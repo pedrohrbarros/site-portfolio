@@ -4,19 +4,10 @@
     "Set up budget":"Fazer orçamento",
     "No choosen project":"Nenhum projeto escolhido",
     "Choose a work below":"Escolha um projeto abaixo",
-    "Interative full stack dashboard with automatic reporting.":"Dashboard Full Stack interativo com emissão de relatórios automática.",
-    "Full stack e-commerce for vegan products":"E-commerce vegano full stack",
-    "Landing page for a lawyer enterprise":"Landing page para advogados",
-    "Institutional educacional landing page":"Landing page para instituição educacional",
-    "Landing Page for restaurant":"Landing page para um restaurante",
-    "Backend authentication structure":"Estrutura de autenticação backend",
-    "In progress":"Em andamento",
     "See project":"Ver projeto",
     "Go to website":"Ir ao website",
     "See repository":"Ver repositório",
     "Go to GitHub":"Ir ao GitHub",
-    "Weeks":"Semanas",
-    "Time Spent":"Tempo gasto",
-    "Landing page for an events company":"Landing page para uma empresa de eventos",
-    "My website portfolio":"Meu website portfolio"
+    "Personal website portfolio that showcases my projects and employment history. The portfolio is equipped with a robust PostgreSQL database and utilizes industry-tech tools such as Next.js with Typescript and Django with Python":"Website portfolio pessoal que mostra todos os meus projetos e histórico de evolução. O portfolio está sendo mantido com um banco de dados robusto em PostgreSQL e utiliza tecnologias atuais do mercado da tecnologia como Next.js com Typescript e Django com Python.",
+    "Responsive full-stack dashboard with advanced capabilities. This solution incorporates cutting-edge technologies such as Next.js with Typescript, Node.js with Express and Typescript, and leverages the power of a reliable PostgreSQL database. The dashboard seamlessly integrates front-end and back-end.":"Dashboard responsivo com capacidades avançadas. Essa solução incorpora tecnologias de ponta, como Next.js com Typescript, Node.js com Express e Typescript, e aproveita o poder de um banco de dados PostgreSQL. O dashboard integra perfeitamente front-end e back-end."
 }

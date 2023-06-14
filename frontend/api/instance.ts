@@ -1,6 +1,6 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: 'https://site-portfolio-api.up.railway.app/api/',
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   timeout: 5000,
 })
