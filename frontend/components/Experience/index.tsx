@@ -24,13 +24,13 @@ function Experience(props: Props) {
             props.roles.map((role: Role, index: number) => {
               const { years, months: remainingMonths } = getYearsAndMonths(role.timeInMonths)
               return(
-                <article className = "w-full h-full px-10 py-8 flex flex-col flex-nowrap justify-start items-start gap-6 text-justify max-[300px]:text-start max-[300px]:px-8" key={index}>
-                  <h2 className="font-h2 text-3xl font-extralight max-[300px]:text-2xl text-transparent transition-all duration-[400ms] ease-in-out group-hover:text-white">{t(role.name)}</h2>
+                <article className = "w-full h-full px-10 py-8 flex flex-col flex-nowrap justify-start items-start gap-6 text-justify max-[300px]:text-start max-[300px]:px-8 max-[500px]:text-center" key={index}>
+                  <h2 className="font-h2 text-3xl font-extralight max-[300px]:text-2xl text-transparent transition-all duration-[400ms] ease-in-out group-hover:text-white max-[500px]:text-center">{t(role.name)}</h2>
                   <p className="font-p text-xl font-normal max-[300px]:text-md text-transparent transition-all duration-[400ms] ease-in-out group-hover:text-white">{t(role.description)}</p>
                   {role.timeInMonths > 12 ?
-                    <p className="font-p text-xl font-normal text-transparent transition-all duration-[400ms] ease-in-out group-hover:text-white">{years} {t('Years')} {t('and')} {remainingMonths} {t('Months')}</p>
+                    <p className="font-p text-xl font-normal text-transparent transition-all duration-[400ms] ease-in-out group-hover:text-white max-[500px]:text-center max-[500px]:w-full">{years} {t('Years')} {t('and')} {remainingMonths} {t('Months')}</p>
                     :
-                    <p className="font-p text-xl font-normal text-transparent transition-all duration-[400ms] ease-in-out group-hover:text-white">{role.timeInMonths} {t('Months')}</p>
+                    <p className="font-p text-xl font-normal text-transparent transition-all duration-[400ms] ease-in-out group-hover:text-white max-[500px]:text-center max-[500px]:w-full">{role.timeInMonths} {t('Months')}</p>
                   }
                 </article>
             )})
