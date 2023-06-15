@@ -64,7 +64,7 @@ function App({ Component, pageProps }: AppProps) {
     return (
       <>
         <Head>
-          <title>{name!}</title>
+          <title>{name}</title>
         </Head>
         <Component {...pageProps} />
       </>

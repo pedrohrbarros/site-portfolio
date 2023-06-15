@@ -212,7 +212,7 @@ export default function Home() {
                 text="Portfolio"
                 alternate_text={t("Works")}
                 onClick={() => {
-                  window.location.pathname = "/contact/";
+                  window.location.pathname = "/portfolio/";
                 }}
               />
             </motion.div>
