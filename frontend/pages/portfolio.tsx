@@ -16,7 +16,7 @@ function Portfolio() {
 
   const [chosenProject, setChosenProject] = React.useState<Project>({
     name: t("No choosen project"),
-    description: t("Choose a project below"),
+    description: ("Choose a project below"),
     url: "/portfolio/",
     repository: "/portfolio/",
     frontendTool: "-",

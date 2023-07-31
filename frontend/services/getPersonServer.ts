@@ -5,11 +5,11 @@ import axios from 'axios'
 export const handleGetPerson = async (): Promise<Person> => {
   try {
     const response = await api.get('person/')
-    console.log(response.data[0])
     return response.data[0]
   } catch (error) {
     if(axios.isAxiosError(error)){
       if (error.response) {
+        console.log(error.response)
         alert('Response error!')
         return {
           name: '',
